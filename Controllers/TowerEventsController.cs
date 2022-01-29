@@ -7,10 +7,10 @@ namespace cTower.Controllers
 {
       [ApiController]
     [Route("api/[controller]")]
-    public class TowerEventController : ControllerBase
+    public class TowerEventsController : ControllerBase
     {
         private readonly TowerEventService _service;
-        public TowerEventController(TowerEventService service){
+        public TowerEventsController(TowerEventService service){
             _service = service;
         }
 
