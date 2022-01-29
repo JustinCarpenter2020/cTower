@@ -28,7 +28,7 @@ namespace cTower.Repositories
       VALUES
       (@Name, @Description, @Tickets, @Price, @ImgUrl, @Location, @Status, @Type);
       SELECT LAST_INSERT_ID();";
-      towerEvent.Id = _db.ExecuteScalar<int>(sql);
+      towerEvent.Id = _db.ExecuteScalar<int>(sql, towerEvent);
       return towerEvent;
     }
   }
