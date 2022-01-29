@@ -1,0 +1,16 @@
+{
+  "version": 2,
+  "dgSpecHash": "3Wxo6Ys2CVZTeNh5XXf3Af0Uw0/xo0NIuUHqTvSR6a+aNCOpvOKyWwXxken9AZksQLM+b0UqaKcMgVvlvqs7eg==",
+  "success": true,
+  "projectFilePath": "c:\\Users\\Justin Carpenter\\source\\cSharpPractice\\cTower\\cTower.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Justin Carpenter\\.nuget\\packages\\microsoft.extensions.apidescription.server\\3.0.0\\microsoft.extensions.apidescription.server.3.0.0.nupkg.sha512",
+    "C:\\Users\\Justin Carpenter\\.nuget\\packages\\microsoft.openapi\\1.2.3\\microsoft.openapi.1.2.3.nupkg.sha512",
+    "C:\\Users\\Justin Carpenter\\.nuget\\packages\\mysqlconnector\\2.1.4\\mysqlconnector.2.1.4.nupkg.sha512",
+    "C:\\Users\\Justin Carpenter\\.nuget\\packages\\swashbuckle.aspnetcore\\5.6.3\\swashbuckle.aspnetcore.5.6.3.nupkg.sha512",
+    "C:\\Users\\Justin Carpenter\\.nuget\\packages\\swashbuckle.aspnetcore.swagger\\5.6.3\\swashbuckle.aspnetcore.swagger.5.6.3.nupkg.sha512",
+    "C:\\Users\\Justin Carpenter\\.nuget\\packages\\swashbuckle.aspnetcore.swaggergen\\5.6.3\\swashbuckle.aspnetcore.swaggergen.5.6.3.nupkg.sha512",
+    "C:\\Users\\Justin Carpenter\\.nuget\\packages\\swashbuckle.aspnetcore.swaggerui\\5.6.3\\swashbuckle.aspnetcore.swaggerui.5.6.3.nupkg.sha512"
+  ],
+  "logs": []
+}
