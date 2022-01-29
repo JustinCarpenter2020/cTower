@@ -1,14 +1,19 @@
 using System;
 using System.Collections.Generic;
 using cTower.Models;
+using cTower.Repositories;
 
 namespace cTower.Services
 {
   public class TowerEventService
   {
+    private readonly TowerEventRepo _repo;
+    public TowerEventService(TowerEventRepo repo){
+      _repo = repo;
+    }
     internal IEnumerable<TowerEvent> getAllEvents()
     {
-      throw new NotImplementedException();
+      return _repo.getAllEvents();
     }
   }
 }

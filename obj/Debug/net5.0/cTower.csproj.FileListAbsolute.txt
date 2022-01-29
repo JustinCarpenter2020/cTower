@@ -27,3 +27,5 @@ C:\Users\Justin Carpenter\source\cSharpPractice\cTower\obj\Debug\net5.0\cTower.d
 C:\Users\Justin Carpenter\source\cSharpPractice\cTower\obj\Debug\net5.0\ref\cTower.dll
 C:\Users\Justin Carpenter\source\cSharpPractice\cTower\obj\Debug\net5.0\cTower.pdb
 C:\Users\Justin Carpenter\source\cSharpPractice\cTower\obj\Debug\net5.0\cTower.genruntimeconfig.cache
+C:\Users\Justin Carpenter\source\cSharpPractice\cTower\bin\Debug\net5.0\MySqlConnector.dll
+C:\Users\Justin Carpenter\source\cSharpPractice\cTower\bin\Debug\net5.0\Dapper.dll

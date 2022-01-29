@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "c:\\Users\\Justin Carpenter\\source\\cSharpPractice\\cTower\\cTower.csproj": {}
+    "C:\\Users\\Justin Carpenter\\source\\cSharpPractice\\cTower\\cTower.csproj": {}
   },
   "projects": {
-    "c:\\Users\\Justin Carpenter\\source\\cSharpPractice\\cTower\\cTower.csproj": {
+    "C:\\Users\\Justin Carpenter\\source\\cSharpPractice\\cTower\\cTower.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "c:\\Users\\Justin Carpenter\\source\\cSharpPractice\\cTower\\cTower.csproj",
+        "projectUniqueName": "C:\\Users\\Justin Carpenter\\source\\cSharpPractice\\cTower\\cTower.csproj",
         "projectName": "cTower",
-        "projectPath": "c:\\Users\\Justin Carpenter\\source\\cSharpPractice\\cTower\\cTower.csproj",
+        "projectPath": "C:\\Users\\Justin Carpenter\\source\\cSharpPractice\\cTower\\cTower.csproj",
         "packagesPath": "C:\\Users\\Justin Carpenter\\.nuget\\packages\\",
-        "outputPath": "c:\\Users\\Justin Carpenter\\source\\cSharpPractice\\cTower\\obj\\",
+        "outputPath": "C:\\Users\\Justin Carpenter\\source\\cSharpPractice\\cTower\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Justin Carpenter\\AppData\\Roaming\\NuGet\\NuGet.Config"
@@ -38,6 +38,10 @@
         "net5.0": {
           "targetAlias": "net5.0",
           "dependencies": {
+            "Dapper": {
+              "target": "Package",
+              "version": "[2.0.123, )"
+            },
             "MySqlConnector": {
               "target": "Package",
               "version": "[2.1.4, )"

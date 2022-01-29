@@ -1,1 +1,13 @@
-CREATE TABLE towerevents()
+-- CREATE TABLE towerevents(
+--   id INT AUTO_INCREMENT PRIMARY KEY NOT NULL,
+--   name VARCHAR(255),
+--   description VARCHAR(255),
+--   imgUrl VARCHAR(255),
+--   type ENUM('concert', 'expo', 'con', 'exhibit', 'sports', 'digital') DEFAULT 'concert',
+--   status ENUM('forSale', 'limited', 'canceled', 'soldOut'),
+--   location VARCHAR(255),
+--   tickets INT NOT NULL,
+--   price INT NOT NULL,
+--   startDate DATE,
+--   endDate DATE
+-- )

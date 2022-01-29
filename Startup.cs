@@ -3,6 +3,8 @@ using System.Collections.Generic;
 using System.Data;
 using System.Linq;
 using System.Threading.Tasks;
+using cTower.Repositories;
+using cTower.Services;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.HttpsPolicy;
@@ -30,6 +32,10 @@ namespace cTower
         {
 
             services.AddControllers();
+
+            services.AddTransient<TowerEventService>();
+            services.AddTransient<TowerEventRepo>();
+            
             services.AddScoped<IDbConnection>(x => CreateDbConnection());
             services.AddSwaggerGen(c =>
             {
