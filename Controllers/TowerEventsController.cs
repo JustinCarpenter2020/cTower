@@ -28,5 +28,19 @@ namespace cTower.Controllers
         }
 
 
+        [HttpPost]
+        public ActionResult<TowerEvent> createEvent([FromBody] TowerEvent towerEvent) {
+            try
+            {
+                return Ok(_service.createEvent(towerEvent));
+            }
+            catch (System.Exception e)
+            {
+                
+                return BadRequest(e.Message);
+            }
+        }
+
+
     }
 }

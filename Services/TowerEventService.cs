@@ -15,5 +15,10 @@ namespace cTower.Services
     {
       return _repo.getAllEvents();
     }
+
+    internal TowerEvent createEvent(TowerEvent towerEvent)
+    {
+      return _repo.createEvent(towerEvent);
+    }
   }
 }

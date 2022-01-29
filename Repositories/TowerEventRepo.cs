@@ -19,5 +19,17 @@ namespace cTower.Repositories
       string sql = "SELECT * FROM towerevents";
       return _db.Query<TowerEvent>(sql);
     }
+
+    internal TowerEvent createEvent(TowerEvent towerEvent)
+    {
+      string sql = @"
+      INSERT INTO towerevents
+      (name, description, tickets, price, imgUrl, location, status, type)
+      VALUES
+      (@Name, @Description, @Tickets, @Price, @ImgUrl, @Location, @Status, @Type);
+      SELECT LAST_INSERT_ID();";
+      towerEvent.Id = _db.ExecuteScalar<int>(sql);
+      return towerEvent;
+    }
   }
 }
