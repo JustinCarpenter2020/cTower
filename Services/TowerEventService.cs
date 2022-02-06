@@ -11,12 +11,17 @@ namespace cTower.Services
     public TowerEventService(TowerEventRepo repo){
       _repo = repo;
     }
-    internal IEnumerable<TowerEvent> getAllEvents()
+    public IEnumerable<TowerEvent> getAllEvents()
     {
       return _repo.getAllEvents();
     }
 
-    internal TowerEvent createEvent(TowerEvent towerEvent)
+    public TowerEvent getEventById(int id)
+    {
+      return _repo.getEventById(id);
+    }
+
+    public TowerEvent createEvent(TowerEvent towerEvent)
     {
       return _repo.createEvent(towerEvent);
     }

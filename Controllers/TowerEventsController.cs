@@ -1,3 +1,4 @@
+using System;
 using System.Collections.Generic;
 using cTower.Models;
 using cTower.Services;
@@ -20,9 +21,22 @@ namespace cTower.Controllers
             {
                 return Ok(_service.getAllEvents());
             }
-            catch (System.Exception e)
+            catch (Exception e)
             {
                 
+                return BadRequest(e.Message);
+            }
+        }
+
+        [HttpGet("{id}")]
+
+        public ActionResult<TowerEvent> getEventById(int id) {
+            try
+            {
+                return Ok(_service.getEventById(id));
+            }
+            catch (Exception e)
+            {
                 return BadRequest(e.Message);
             }
         }
@@ -34,12 +48,30 @@ namespace cTower.Controllers
             {
                 return Ok(_service.createEvent(towerEvent));
             }
-            catch (System.Exception e)
+            catch (Exception e)
             {
                 
                 return BadRequest(e.Message);
             }
         }
+
+        // [HttpPut]
+
+        // public actionResult<TowerEvent> EditEvent([FromBody] TowerEvent editableTowerEvent)
+        // {
+        //     try
+        //     {
+            
+        //     }
+        //     catch (System.Exception ex)
+        //     {
+                
+        //        return BadRequest(ex.message);
+        //     }
+        // }
+
+
+        
 
 
     }

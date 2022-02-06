@@ -1,6 +1,7 @@
 using System;
 using System.Collections.Generic;
 using System.Data;
+using System.Linq;
 using cTower.Models;
 using Dapper;
 
@@ -14,13 +15,19 @@ namespace cTower.Repositories
       public TowerEventRepo(IDbConnection db){
           _db = db;
       }
-    internal IEnumerable<TowerEvent> getAllEvents()
+    public IEnumerable<TowerEvent> getAllEvents()
     {
       string sql = "SELECT * FROM towerevents";
       return _db.Query<TowerEvent>(sql);
     }
 
-    internal TowerEvent createEvent(TowerEvent towerEvent)
+    public TowerEvent getEventById(int id)
+    {
+      string sql = "SELECT * FROM towerevents WHERE id = @id";
+      return _db.Query<TowerEvent>(sql, new {id}).FirstOrDefault();
+    }
+
+    public TowerEvent createEvent(TowerEvent towerEvent)
     {
       string sql = @"
       INSERT INTO towerevents
