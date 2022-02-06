@@ -31,6 +31,20 @@ namespace cTower
         public void ConfigureServices(IServiceCollection services)
         {
 
+                    services.AddCors(options =>
+        {
+          options.AddPolicy("CorsDevPolicy", builder =>
+              {
+                builder.WithOrigins(new string[]{
+                            "http://localhost:4200",
+                            "http://localhost:4201"
+                          })
+                          .AllowAnyMethod()
+                          .AllowAnyHeader()
+                          .AllowCredentials();
+              });
+        });
+
             services.AddControllers();
 
             services.AddTransient<TowerEventService>();
@@ -41,6 +55,10 @@ namespace cTower
             {
                 c.SwaggerDoc("v1", new OpenApiInfo { Title = "cTower", Version = "v1" });
             });
+
+
+    
+
         }
 
 
@@ -57,6 +75,7 @@ namespace cTower
                 app.UseDeveloperExceptionPage();
                 app.UseSwagger();
                 app.UseSwaggerUI(c => c.SwaggerEndpoint("/swagger/v1/swagger.json", "cTower v1"));
+                 app.UseCors("CorsDevPolicy");
             }
 
             app.UseHttpsRedirection();
